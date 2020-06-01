@@ -66,5 +66,5 @@ stages:
               appType: webAppLinux
               appName: $(webAppName)
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
-              slotName: dev
+              slotName: spring-notejam-dev
 
