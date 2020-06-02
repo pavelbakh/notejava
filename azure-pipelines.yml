@@ -9,7 +9,7 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '26605820-cb85-492d-875c-0e3523ce541a'
+  azureSubscription: 'AzureRmPipeline-conn'
   
   # Web app name
   webAppName: 'spring-notejam'
