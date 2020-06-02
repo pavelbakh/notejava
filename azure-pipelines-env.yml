@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'AzureRmPipeline-conn'
+    subscriptionId: '7e891701-75c4-4555-b8e3-610a365a1a9d'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'spring-notejam-rg'
+    location: 'West Europe'
+    templateLocation: 'Linked artifact'
+    csmFile: 'azure/template.json'
+    overrideParameters: '-projectName notejam -linkedTemplateUri https://raw.githubusercontent.com/pavelbakh/notejava/master/azure/template.json'
+    deploymentMode: 'Incremental'
