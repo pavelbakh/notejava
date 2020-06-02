@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_spring_notejam_name": {
+            "value": null
+        },
+        "serverfarms_ServicePlan98734cf3_a029_4c8f_name": {
+            "value": null
+        }
+    }
+}
