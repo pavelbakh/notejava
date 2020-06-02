@@ -184,24 +184,6 @@
         {
             "type": "Microsoft.Web/sites/deployments",
             "apiVersion": "2018-11-01",
-            "name": "[concat(parameters('sites_spring_notejam_name'), '/411591034898099')]",
-            "location": "West Europe",
-            "dependsOn": [
-                "[resourceId('Microsoft.Web/sites', parameters('sites_spring_notejam_name'))]"
-            ],
-            "properties": {
-                "status": 4,
-                "author": "Pavel B",
-                "deployer": "VSTS",
-                "message": "{\"type\":\"Deployment\",\"commitId\":\"007e3052ff95f35218a988ca5a95712408570ccd\",\"buildId\":\"41\",\"buildNumber\":\"20200601.1\",\"repoProvider\":\"GitHub\",\"repoName\":\"pavelbakh/notejava\",\"collectionUrl\":\"https://dev.azure.com/pavelbakh69/\",\"teamProject\":\"57245755-fd21-42e8-8758-2d70e462e6d9\",\"buildProjectUrl\":\"https://dev.azure.com/pavelbakh69/57245755-fd21-42e8-8758-2d70e462e6d9\",\"repositoryUrl\":\"https://github.com/pavelbakh/notejava\",\"branch\":\"master\",\"teamProjectName\":\"notejam\",\"slotName\":\"production\"}",
-                "start_time": "2020-06-01T18:08:18.5879012Z",
-                "end_time": "2020-06-01T18:08:18.5879012Z",
-                "active": false
-            }
-        },
-        {
-            "type": "Microsoft.Web/sites/deployments",
-            "apiVersion": "2018-11-01",
             "name": "[concat(parameters('sites_spring_notejam_name'), '/441591042317614')]",
             "location": "West Europe",
             "dependsOn": [
