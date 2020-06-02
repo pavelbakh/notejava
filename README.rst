@@ -87,6 +87,38 @@ Run functional and unit tests:
     $ cd YOUR_PROJECT_DIR/spring/
     $ mvn test
 
+=============================
+Deployment to Microsoft Azure
+=============================
+
+The Java Spring Application is deployed to Microsoft Azure Web App service for Linux platform (https://docs.microsoft.com/en-us/azure/app-service/).
+
+For deployment to Microsoft Azure the ARM template based method is used with applied best practices https://docs.microsoft.com/en-us/azure/app-service/deploy-best-practices
+
+-----------
+Using Maven
+-----------
+
+Read detailed description here https://docs.microsoft.com/en-us/azure/developer/java/spring-framework/deploy-spring-boot-java-app-with-maven-plugin#configure-maven-plugin-for-azure-app-service
+
+-------------
+ARM templates
+-------------
+
+Template for Azure cloud resources deloyment https://raw.githubusercontent.com/pavelbakh/notejava/master/azure-pipelines-env.yml
+
+Template for the application build, test and deploiment https://raw.githubusercontent.com/pavelbakh/notejava/master/azure-pipelines.yml
+
+------------
+Azure DevOps
+------------
+
+There are two pipeline inside Azure DevOps service:
+
+- **notejava**      - Java Spring application build, test and deployment
+- **notejava-env**  - Microsoft Azure cloud resources deployment
+
+
 ============
 Contribution
 ============
