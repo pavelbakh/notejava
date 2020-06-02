@@ -9,6 +9,20 @@
         "serverfarms_ServicePlan98734cf3_a029_4c8f_name": {
             "defaultValue": "ServicePlan98734cf3-a029-4c8f",
             "type": "String"
+        },
+        "projectName": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 11,
+        "metadata": {
+                "description": "Specify a project name that is used to generate resource names."
+            }
+        },
+        "linkedTemplateUri": {
+        "type": "string",
+        "metadata": {
+                "description": "The Uri of the linked template."
+            }
         }
     },
     "variables": {},
